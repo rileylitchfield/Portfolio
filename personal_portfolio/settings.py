@@ -26,7 +26,7 @@ SECRET_KEY = '#+7l)&gfm)bae!)7#(py(4v*l(fdgd2l$yd(b248n6m3hbxd_&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://rileyportfolio.herokuapp.com/']
 
 
 # Application definition
