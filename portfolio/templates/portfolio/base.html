@@ -34,16 +34,16 @@
       <div class="collapse navbar-collapse text-center" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'home' %}">Home</a>
+            <a role="button" href="{% url 'home' %}" class="btn btn-outline-info">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% static "portfolio/resume.pdf" %}" target="_blank">Resume</a>
+            <a role="button" href="{% static "portfolio/resume.pdf" %}" target="_blank" class="btn btn-outline-info">Resume</a>
           </li>
           <li>
-            <a class="nav-link" href="https://github.com/rileylitchfield?tab=repositories" target="_blank">GitHub</a>
+            <a role="button" href="https://github.com/rileylitchfield?tab=repositories" target="_blank" class="btn btn-outline-info">GitHub</a>
           </li>
           <li>
-            <a class="nav-link" href="{% url 'blog:all_blogs' %}">Blog</a>
+            <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-outline-info">Blog</a>
           </li>
         </ul>
       </div>
