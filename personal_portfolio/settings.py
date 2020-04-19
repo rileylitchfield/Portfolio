@@ -30,6 +30,16 @@ DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 
 ALLOWED_HOSTS = ['https://rileyportfolio.herokuapp.com/']
 
+# amazon s3
+AWS_S3_REGION_NAME = 'us-east-2'
+AWS_ACCESS_KEY_ID = 'AKIAQFCOYHPZTIW2K7O7'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'rileylitchfield'
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 # Application definition
 
@@ -42,6 +52,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'portfolio',
+    'storages',
 ]
 
 MIDDLEWARE = [
